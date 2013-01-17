@@ -94,6 +94,9 @@ a:hover{
 	width:100%;
 	height:100%;
 }
+#bg img{
+	display:none;
+}
 #bg-holder{
 	position:absolute;
 	width:100%;
