@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Imagemax JQuery Plugin</title>
+
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+
+</head>
+
+<body>
+
+	<div id="bg">
+        <img data-src="img/bg1.jpg"/>
+        <img data-src="img/bg2.jpg"/>
+        <img data-src="img/bg3.jpg"/>
+        <img data-src="img/bg4.jpg"/>
+	</div>
+
+	<div id="goto-list">
+		<h5>View source for usage.</h5>
+		<ul id="link-list">
+			<li id="one"><a href="#">Go to image 1</a></li>
+			<li id="two"><a href="#">Go to image 2</a></li>
+			<li id="three"><a href="#">Go to image 3</a></li>
+			<li id="four"><a href="#">Go to image 4</a></li>
+		</ul>
+	</div>
+
+	<div id="spinner"><img src="img/spinner.gif" alt="" /></div>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="js/jquery.easing.min.js"></script>
+<script src="js/jquery.imagemax.js"></script>
+<script>
+	$('#bg').imagemax({
+		speed: 1100,
+		transition: 'slide',
+		slideType: 'vertical',
+		preloader: '#spinner'
+	});
+	
+	$('#one').click(function(e){
+		e.preventDefault();
+		$('#bg').imagemax('goTo' ,0);
+	});
+	$('#two').click(function(e){
+		e.preventDefault();
+		$('#bg').imagemax('goTo' ,1);
+	});
+	$('#three').click(function(e){
+		e.preventDefault();
+		$('#bg').imagemax('goTo' ,2);
+	});
+	$('#four').click(function(e){
+		e.preventDefault();
+		$('#bg').imagemax('goTo' ,3);
+	});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Imagemax JQuery Plugin</title>
+
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+
+</head>
+
+<body>
+
+	<div id="bg">
+        <img data-src="img/bg6.jpg"/>
+	</div>
+
+	<div id="goto-list">
+		<h5>View source for usage.</h5>
+		<ul id="link-list">
+			<li id="link1"><a href="#">Load image and move right</a></li>
+			<li id="link2"><a href="#">Load image and move left</a></li>
+			<li id="link3"><a href="#">Load image and move up</a></li>
+			<li id="link4"><a href="#">Load image and move down</a></li>
+			<li id="link5"><a href="#">Load image and fade in</a></li>
+		</ul>
+	</div>
+
+	<div id="spinner"><img src="img/spinner.gif" alt="" /></div>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="js/jquery.easing.min.js"></script>
+<script src="js/jquery.imagemax.js"></script>
+<script>
+	$('#bg').imagemax({
+		speed: 1100,
+		transition: 'slide',
+		slideType: 'vertical',
+		preloader: '#spinner'
+	});
+	
+	$('#link1').click(function(e){
+		$('#bg').imagemax('load', 'img/bg1.jpg', 'slide', 'right');
+		e.preventDefault();
+	});
+	$('#link2').click(function(e){
+		$('#bg').imagemax('load', 'img/bg2.jpg', 'slide', 'left');
+		e.preventDefault();
+	});
+	$('#link3').click(function(e){
+		$('#bg').imagemax('load', 'img/bg3.jpg', 'slide', 'up');
+		e.preventDefault();
+	});
+	$('#link4').click(function(e){
+		$('#bg').imagemax('load', 'img/bg4.jpg', 'slide', 'down');
+		e.preventDefault();
+	});
+	$('#link5').click(function(e){
+		$('#bg').imagemax('load', 'img/bg5.jpg', 'crossfade');
+		e.preventDefault();
+	});
+</script>
+
+</body>
+</html>
