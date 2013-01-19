@@ -28,6 +28,8 @@
   ],
   "homepage": "http://www.zerostatic.com/imagemax/",
   "docs": "http://www.zerostatic.com/imagemax/documentation.html",
+  "demo" : "http://www.zerostatic.com/imagemax/demos.html",
+  "download" : "https://github.com/zerostatic/imagemax/archive/1.0.zip",
   "dependencies": {
     "jquery": ">=1.5"
   }
