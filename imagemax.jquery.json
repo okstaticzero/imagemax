@@ -9,15 +9,15 @@
     "background",
     "imagemax"
   ],
-  "version": "1.0.3",
+  "version": "1.0.4",
   "author": {
-    "name": "Zerosatic",
+    "name": "Zerostatic",
     "url": "http://www.zerostatic.com/imagemax/"
   },
   "maintainers": [
     {
       "name": "Matt Wallace",
-      "email": "mwallace@zerosatic.com",
+      "email": "mwallace@zerostatic.com",
       "url": "http://www.zerostatic.com"
     }
   ],
@@ -30,7 +30,7 @@
   "homepage": "http://www.zerostatic.com/imagemax/",
   "docs": "http://www.zerostatic.com/imagemax/documentation.html",
   "demo" : "http://www.zerostatic.com/imagemax/demos.html",
-  "download" : "https://github.com/zerostatic/imagemax/archive/1.0.3.zip",
+  "download" : "https://github.com/zerostatic/imagemax/archive/1.0.4.zip",
   "dependencies": {
     "jquery": ">=1.5"
   }
