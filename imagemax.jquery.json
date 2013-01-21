@@ -8,7 +8,7 @@
     "slideshow",
     "background"
   ],
-  "version": "1.0.2",
+  "version": "1.0.3",
   "author": {
     "name": "Matt Wallace, Zerosatic",
     "url": "http://www.zerostatic.com/imagemax/"
@@ -29,7 +29,7 @@
   "homepage": "http://www.zerostatic.com/imagemax/",
   "docs": "http://www.zerostatic.com/imagemax/documentation.html",
   "demo" : "http://www.zerostatic.com/imagemax/demos.html",
-  "download" : "https://github.com/zerostatic/imagemax/archive/1.0.zip",
+  "download" : "https://github.com/zerostatic/imagemax/archive/1.0.3.zip",
   "dependencies": {
     "jquery": ">=1.5"
   }
