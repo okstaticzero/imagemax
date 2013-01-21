@@ -1,16 +1,17 @@
 {
   "name": "imagemax",
-  "title": "jQuery Imagemax Plugin",
-  "description": "jQuery plugin for fullscreen images, gallaries and slideshows",
+  "title": "Imagemax plugin",
+  "description": "jQuery plugin for fullscreen images, galleries and slideshows",
   "keywords": [
     "fullscreen",
     "gallery",
     "slideshow",
-    "background"
+    "background",
+    "imagemax"
   ],
   "version": "1.0.3",
   "author": {
-    "name": "Matt Wallace, Zerosatic",
+    "name": "Zerosatic",
     "url": "http://www.zerostatic.com/imagemax/"
   },
   "maintainers": [
